@@ -1,5 +1,10 @@
+*.idea
+
 /Special_topics/Dynamic_Programming_1/Part_1
 /Special_topics/Dynamic_Programming_1/Part_2
+
+
+/SQL_Marathon/Day1/readme.md
 
 
 /SQL_Marathon/Day1/0_Basic_SQL/Exaple_task
