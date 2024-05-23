@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .square1 {
+            margin: 0 auto;
+            height: 20px;
+            width: 20px;
+            background-color: #D0FFE4FF;
+        }
+        .square2 {
+            margin: 0 auto;
+            height: 20px;
+            width: 20px;
+            background-color: #ABA9CCFF;
+        }
+        .square3 {
+            margin: 0 auto;
+            height: 20px;
+            width: 20px;
+            background-color: #A17980FF;
+        }
+
+        .PostgreSQLText {
+            color: #d0ffe4;
+            display: inline-block;
+            font-weight: bold;
+        }
+        .MySQLText {
+            color: #A17980FF;
+            display: inline-block;
+            font-weight: bold;
+        }
+        .SameDBText {
+            color: #aba9cc;
+            display: inline-block;
+            font-weight: bold;
+        }
+        .AdditionallyInfoText {
+            color:#f8c6b6;
+            display: inline-block;
+            font-weight: bold;
+        }
+        .LeetCodeText {
+            align-self: center;
+            alignment-baseline: center;
+            text-align-all: center;
+            text-align: center;
+            align-content: center;
+            align-items: center;
+            font-size: 18px;
+            white-space: nowrap;
+        }
+        .Easy {
+            color: #81ff6a;
+            white-space: nowrap;
+        }
+        .Medium {
+            color: #faff6a;
+            white-space: nowrap;
+        }
+        .Hard {
+            color: #ff6a6a;
+            white-space: nowrap;
+        }
+        .Solution {
+            color: #efefef;
+            display: inline-block;
+            white-space: nowrap;
+        }
+        body {
+            font-family: ;
+            margin-left: 15%;
+            margin-right: 15%;
+            background-color: #1e1f22;
+            color: #ffffff;
+        }
+        blockquote {
+            background: #212325;
+            border-left: 5px solid #494545;
+            margin: 20px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            line-height: 140%
+        }
+    </style>
+    <title>SQL Marathon Day2</title>
+</head>
+<body>
+<h2 align="center">
+    Welcome again to SQL LeetCode Marathon!
+    <img src="https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_500,h_500,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/events/2023-10-10_13-10-44_NLy2I3k.png"
+         width="22px" alt="GDSC AITU">
+</h2>
+
+<hr>
+<h3 align="center">
+    Below is information regarding the <u>2nd</u> day of the marathon
+</h3>
+<hr>
+
+
+<table style="border: none; border-collapse: collapse; padding-left: 10%; padding-right: 10%">
+    <tr style="border: none;">
+        <td width="26%" style="border: none; text-align: center; vertical-align: center; align-items: center; justify-content: center; align-content: center">
+            <div class="square1"></div>
+            <span>PostgreSQL</span>
+        </td>
+        <td width="26%" style="border: none; text-align: center; vertical-align: middle; align-items: center; justify-content: center;">
+            <div class="square2"></div>
+            <span>Same</span>
+        </td>
+        <td width="26%" style="border: none; text-align: center; vertical-align: middle; align-items: center; justify-content: center;">
+            <div class="square3"></div>
+            <span>MySQL</span>
+        </td>
+    </tr>
+</table>
+
+
+<hr> <b>
+    Today on the marathon you will learn: </b> <br>
+<b>1) JOINS </b> <i>(INNER, CROSS, SELF)</i>, From 2+ tables at once <br>
+<b> 2) How to cast types in SQL </b>
+<br>
+<b> 3) What are sub queries in SQL </b> <br>
+<b> 4)
+    <div class="SameDBText"> IN</div>,
+    <div class="SameDBText"> EXISTS</div>
+
+    <hr>
+    <h4 align="center">
+        <ul>
+            <li> Solve 20 tasks </li>
+            <li> Marathon time:3 hours, 02 minutes.</li>
+        </ul>
+    </h4>
+
+    <hr>
+    <hr>
+    <table style="border: none; border-collapse: collapse; margin-left: 10%">
+        <tr style="border: none;">
+            <td width="40%" style="border: none; text-align: center; vertical-align: center; align-items: center; justify-content: center; align-content: center">
+                |>
+                <span>Sample tasks</span>
+            </td>
+            <td width="50%" style="border: none; text-align: center; vertical-align: middle; align-items: center; justify-content: center;">
+                |
+                <span>Tasks to solve.</span>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+    <table style="border: none; border-collapse: collapse; padding-left: 10%">
+        <tr style="border: none;">
+            <td width="16%" style="border: none; text-align: center; vertical-align: center; align-items: center; justify-content: center; align-content: center">
+                <text class="Easy">Easy tasks</text>
+            </td>
+            <td width="26%" style="border: none; text-align: center; vertical-align: middle; align-items: center; justify-content: center;">
+                <text class="Medium">Medium tasks</text>
+            </td>
+            <td width="26%" style="border: none; text-align: center; vertical-align: middle; align-items: center; justify-content: center;">
+                <text class="Hard">Hard tasks</text>
+            </td>
+        </tr>
+    </table>
+    <hr>
+
+    <h3 align="center">
+        <u>
+            JOINS
+        </u>
+    </h3>
+    <hr>
+    <div align="center" class="AdditionallyInfoText">
+        Additionally material: <a href="https://timeweb.com/ru/community/articles/kak-rabotaet-sql-join"> click</a>, <a href="https://sky.pro/media/join-v-sql/">click.</a>
+    </div>
+
+    <hr>
+    <div class="LeetCodeText">
+        <text style="color: #ffda40">Leet</text><text style="color: #626262">Code</text>
+        Tasks
+    </div>
+
+    <blockquote>
+        |>  <text class="Easy"> 197</text>. Rising Temperature <a href="https://leetcode.com/problems/rising-temperature/?envType=study-plan-v2&envId=top-sql-50"> click. </a>
+        > <text class="Solution">Solution: </text> <a href="https://github.com/https-whoyan/gdsc_leetcode_event_solutions/tree/main/SQL_Marathon/Day2/0_Joins/Example_tasks/197_Rising_Temperature"> click.</a>
+    </blockquote>
+    <blockquote>
+        |>  <text class="Easy"> 1378. </text>Replace Employee ID With The Unique Identifier<a href="https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/?envType=study-plan-v2&envId=top-sql-50"> click. </a>
+        > <text class="Solution">Solution: </text> <a href="https://github.com/https-whoyan/gdsc_leetcode_event_solutions/tree/main/SQL_Marathon/Day2/0_Joins/Example_tasks/1378_Replace_Employee_ID_With_The_Unique_Identifier"> click.</a>
+    </blockquote>
+    <blockquote>
+        | <text class="Medium"> 570. </text>Managers with at Least 5 Direct Reports<a href="https://leetcode.com/problems/managers-with-at-least-5-direct-reports/?envType=study-plan-v2&envId=top-sql-50"> click. </a>
+        > <text class="Solution">Solution: </text> <a href="https://github.com/https-whoyan/gdsc_leetcode_event_solutions/tree/main/SQL_Marathon/Day2/0_Joins/Other_Tasks/570_Managers_with_at_Least_5_Direct_Reports"> click.</a>
+    </blockquote>
+    <blockquote>
+        | <text class="Easy"> 577. </text>Employee Bonus<a href="https://leetcode.com/problems/employee-bonus/description/?envType=study-plan-v2&envId=top-sql-50"> click. </a>
+        > <text class="Solution">Solution: </text> <a href="https://github.com/https-whoyan/gdsc_leetcode_event_solutions/tree/main/SQL_Marathon/Day2/0_Joins/Other_Tasks/577_Employee_Bonus"> click.</a>
+    </blockquote>
+    <blockquote>
+        | <text class="Easy"> 1068. </text>Product Sales Analysis I<a href="https://leetcode.com/problems/product-sales-analysis-i/?envType=study-plan-v2&envId=top-sql-50"> click. </a>
+        > <text class="Solution">Solution: </text> <a href="https://github.com/https-whoyan/gdsc_leetcode_event_solutions/tree/main/SQL_Marathon/Day2/0_Joins/Other_Tasks/1068_Product_Sales_Analysis_I"> click.</a>
+    </blockquote>
+    <blockquote>
+        | <text class="Easy"> 1280. </text>Students and Examinations<a href="https://leetcode.com/problems/students-and-examinations?envType=study-plan-v2&envId=top-sql-50"> click. </a>
+        > <text class="Solution">Solution: </text> <a href="https://github.com/https-whoyan/gdsc_leetcode_event_solutions/tree/main/SQL_Marathon/Day2/0_Joins/Other_Tasks/1280_Students_and_Examinations"> click.</a>
+    </blockquote>
+    <blockquote>
+        | <text class="Easy"> 1581. </text>Customer Who Visited but Did Not Make Any Transactions <a href="https://leetcode.com/problems/customer-who-visited-but-did-not-make-any-transactions/?envType=study-plan-v2&envId=top-sql-50"> click. </a>
+        > <text class="Solution">Solution: </text> <a href="https://github.com/https-whoyan/gdsc_leetcode_event_solutions/tree/main/SQL_Marathon/Day2/0_Joins/Other_Tasks/1581_Customer_Who_Visited_but_Did_Not_Make_Any_Transactions"> click.</a>
+    </blockquote>
+    <blockquote>
+        | <text class="Easy"> 1661. </text>Average Time of Process per Machine <a href="https://leetcode.com/problems/average-time-of-process-per-machine/description/?envType=study-plan-v2&envId=top-sql-50"> click. </a>
+        > <text class="Solution">Solution: </text> <a href="https://github.com/https-whoyan/gdsc_leetcode_event_solutions/tree/main/SQL_Marathon/Day2/0_Joins/Other_Tasks/1661_Average_Time_of_Process_per_Machine"> click.</a>
+    </blockquote>
+    <blockquote>
+        | <text class="Medium"> 1934. </text>Confirmation Rate <a href="https://leetcode.com/problems/confirmation-rate/?envType=study-plan-v2&envId=top-sql-50"> click. </a>
+        > <text class="Solution">Solution: </text> <a href="https://github.com/https-whoyan/gdsc_leetcode_event_solutions/tree/main/SQL_Marathon/Day2/0_Joins/Other_Tasks/1934_Confirmation_Rate"> click.</a>
+    </blockquote>
+    <hr>
+    <h3 align="center"> <u>
+        Subqueries </u>
+    </h3>
+    <hr>
+
+    <div align="center" class="AdditionallyInfoText">
+        Additionally material: <a href="https://sky.pro/media/sql-podzaprosy-rukovodstvo-po-ispolzovaniyu/"> click</a>
+    </div>
+
+    <hr>
+    <div class="LeetCodeText">
+        <text style="color: #ffda40">Leet</text><text style="color: #626262">Code</text>
+        Tasks
+    </div>
+
+    <blockquote>
+        |> <text class="Medium"> 1174.</text> Immediate Food Delivery II. <a href="https://leetcode.com/problems/immediate-food-delivery-ii/?envType=study-plan-v2&envId=top-sql-50"> click. </a>
+        > <text class="Solution">Solution: </text> <a href="https://github.com/https-whoyan/gdsc_leetcode_event_solutions/tree/main/SQL_Marathon/Day2/1_Subqueries/Example_task_1/1174_Immediate_Food_Delivery_II"> click.</a>
+    </blockquote>
+    <blockquote>
+        | <text class="Easy"> 1075.</text> Project Employees I <a href="https://leetcode.com/problems/project-employees-i/?envType=study-plan-v2&envId=top-sql-50"> click. </a>
+        <text class="Solution">Solution: </text> <a href="https://github.com/https-whoyan/gdsc_leetcode_event_solutions/tree/main/SQL_Marathon/Day2/1_Subqueries/First_tasks/1075_Project_Employees_I"> click.</a>
+    </blockquote>
+    <blockquote>
+        | <text class="Easy"> 1251.</text> Average Selling Price. <a href="https://leetcode.com/problems/average-selling-price/?envType=study-plan-v2&envId=top-sql-50"> click. </a>
+        > <text class="Solution">Solution: </text> <a href="https://github.com/https-whoyan/gdsc_leetcode_event_solutions/tree/main/SQL_Marathon/Day2/1_Subqueries/First_tasks/1251_Average_Selling_Price"> click.</a>
+    </blockquote>
+    <blockquote>
+        |> <text class="Medium"> 550.</text> Game Play Analysis IV. <a href="https://leetcode.com/problems/game-play-analysis-iv?envType=study-plan-v2&envId=top-sql-50"> click. </a>
+        > <text class="Solution">Solution: </text> <a href="https://github.com/https-whoyan/gdsc_leetcode_event_solutions/tree/main/SQL_Marathon/Day2/1_Subqueries/Example_task_2/550_Game_Play_Analysis_IV"> click.</a>
+    </blockquote>
+    <blockquote>
+        | <text class="Easy"> 596.</text> Classes More Than 5 Students <a href="https://leetcode.com/problems/classes-more-than-5-students/description/?envType=study-plan-v2&envId=top-sql-50"> click. </a>
+        > <text class="Solution">Solution: </text> <a href="https://github.com/https-whoyan/gdsc_leetcode_event_solutions/tree/main/SQL_Marathon/Day2/1_Subqueries/Second_tasks/596_Classes_More_Than_5_Students"> click.</a>
+    </blockquote>
+    <blockquote>
+        | <text class="Easy"> 619.</text> Biggest Single Number <a href="https://leetcode.com/problems/biggest-single-number/description/?envType=study-plan-v2&envId=top-sql-50"> click. </a>
+        > <text class="Solution">Solution: </text> <a href="https://github.com/https-whoyan/gdsc_leetcode_event_solutions/tree/main/SQL_Marathon/Day2/1_Subqueries/Second_tasks/619_Biggest_Single_Number"> click.</a>
+    </blockquote>
+    <blockquote>
+        | <text class="Medium"> 1045.</text> Customers Who Bought All Products <a href="https://leetcode.com/problems/customers-who-bought-all-products/?envType=study-plan-v2&envId=top-sql-50"> click. </a>
+        > <text class="Solution">Solution: </text> <a href="https://github.com/https-whoyan/gdsc_leetcode_event_solutions/tree/main/SQL_Marathon/Day2/1_Subqueries/Second_tasks/1045_Customers_Who_Bought_All_Products"> click.</a>
+    </blockquote>
+    <blockquote>
+        | <text class="Medium"> 1070.</text> Product Sales Analysis III <a href="https://leetcode.com/problems/product-sales-analysis-iii?envType=study-plan-v2&envId=top-sql-50"> click. </a>
+        > <text class="Solution">Solution: </text> <a href="https://github.com/https-whoyan/gdsc_leetcode_event_solutions/tree/main/SQL_Marathon/Day2/1_Subqueries/Second_tasks/1070_Product_Sales_Analysis_III"> click.</a>
+    </blockquote>
+    <hr>
+    <h3 align="center"> <u>
+        Finishing advancing aggregage function tasks </u>
+    </h3>
+    <hr>
+
+    <blockquote>
+        | <text class="Medium"> 176. </text> Second Highest Salary <a href="https://leetcode.com/problems/second-highest-salary/description/?envType=study-plan-v2&envId=top-sql-50"> click. </a>
+        > <text class="Solution">Solution: </text> <a href="https://github.com/https-whoyan/gdsc_leetcode_event_solutions/tree/main/SQL_Marathon/Day2/2_Str_functions/176_Second_Highest_Salary"> click.</a>
+    </blockquote>
+    <blockquote>
+        | <text class="Easy"> 196. </text> Delete Duplicate Emails <a href="https://leetcode.com/problems/delete-duplicate-emails/?envType=study-plan-v2&envId=top-sql-50"> click. </a>
+        > <text class="Solution">Solution: </text> <a href="https://github.com/https-whoyan/gdsc_leetcode_event_solutions/tree/main/SQL_Marathon/Day2/2_Str_functions/196_Delete_Duplicate_Emails"> click.</a>
+    </blockquote>
+    <blockquote>
+        | <text class="Easy"> 1327. </text> List the Products Ordered in a Period <a href="https://leetcode.com/problems/list-the-products-ordered-in-a-period?envType=study-plan-v2&envId=top-sql-50"> click. </a>
+        > <text class="Solution">Solution: </text> <a href="https://github.com/https-whoyan/gdsc_leetcode_event_solutions/tree/main/SQL_Marathon/Day2/2_Str_functions/1327_List_the_Products_Ordered_in_a_Period"> click.</a>
+    </blockquote>
+    <br>
+    <hr>
+    <h2 align="center">
+        Thank you for attention! 🖤
+        <img src="https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_500,h_500,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/events/2023-10-10_13-10-44_NLy2I3k.png"
+             width="22px" alt="GDSC AITU">
+    </h2> </b>
+</body>
+</html>
