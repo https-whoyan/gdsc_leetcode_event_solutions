@@ -12,3 +12,13 @@ WHERE tb1.event_date IN (
     FROM Activity
     WHERE player_id = tb1.player_id 
 )
+
+with product_with_rnum AS (
+    SELECT
+        *,
+        ROW_NUMBER() OVER (
+            PARTITION BY category
+            ORDER BY delivery_date
+        ) as rNum
+    FROM products
+)

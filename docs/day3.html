@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .square1 {
+            margin: 0 auto;
+            height: 20px;
+            width: 20px;
+            background-color: #D0FFE4FF;
+        }
+        .square2 {
+            margin: 0 auto;
+            height: 20px;
+            width: 20px;
+            background-color: #ABA9CCFF;
+        }
+        .square3 {
+            margin: 0 auto;
+            height: 20px;
+            width: 20px;
+            background-color: #A17980FF;
+        }
+
+        .PostgreSQLText {
+            color: #d0ffe4;
+            display: inline-block;
+            font-weight: bold;
+        }
+        .MySQLText {
+            color: #A17980FF;
+            display: inline-block;
+            font-weight: bold;
+        }
+        .SameDBText {
+            color: #aba9cc;
+            display: inline-block;
+            font-weight: bold;
+        }
+        .AdditionallyInfoText {
+            color:#f8c6b6;
+            display: inline-block;
+            font-weight: bold;
+        }
+        .LeetCodeText {
+            align-self: center;
+            alignment-baseline: center;
+            text-align-all: center;
+            text-align: center;
+            align-content: center;
+            align-items: center;
+            font-size: 18px;
+            white-space: nowrap;
+        }
+        .Easy {
+            color: #81ff6a;
+            white-space: nowrap;
+        }
+        .Medium {
+            color: #faff6a;
+            white-space: nowrap;
+        }
+        .Hard {
+            color: #ff6a6a;
+            white-space: nowrap;
+        }
+        .Solution {
+            color: #efefef;
+            display: inline-block;
+            white-space: nowrap;
+        }
+        body {
+            font-family: ;
+            margin-left: 15%;
+            margin-right: 15%;
+            background-color: #1e1f22;
+            color: #ffffff;
+        }
+        blockquote {
+            background: #212325;
+            border-left: 5px solid #494545;
+            margin: 20px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            line-height: 140%
+        }
+    </style>
+    <title>SQL Marathon day3</title>
+</head>
+<body>
+<style>
+    .square1 {
+        margin: 0 auto;
+        height: 20px;
+        width: 20px;
+        background-color: #D0FFE4FF;
+    }
+    .square2 {
+        margin: 0 auto;
+        height: 20px;
+        width: 20px;
+        background-color: #ABA9CCFF;
+    }
+    .square3 {
+        margin: 0 auto;
+        height: 20px;
+        width: 20px;
+        background-color: #A17980FF;
+    }
+
+    .PostgreSQLText {
+        color: #d0ffe4;
+        display: inline-block;
+        font-weight: bold;
+    }
+    .MySQLText {
+        color: #A17980FF;
+        display: inline-block;
+        font-weight: bold;
+    }
+    .SameDBText {
+        color: #aba9cc;
+        display: inline-block;
+        font-weight: bold;
+    }
+    .AdditionallyInfoText {
+        color:#f8c6b6;
+        display: inline-block;
+        font-weight: bold;
+    }
+    .LeetCodeText {
+        align-self: center;
+        alignment-baseline: center;
+        text-align-all: center;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+        font-size: 18px;
+        white-space: nowrap;
+    }
+    .Easy {
+        color: #81ff6a;
+        white-space: nowrap;
+    }
+    .Medium {
+        color: #faff6a;
+        white-space: nowrap;
+    }
+    .Hard {
+        color: #ff6a6a;
+        white-space: nowrap;
+    }
+    .Solution {
+        color: #efefef;
+        display: inline-block;
+        white-space: nowrap;
+    }
+</style>
+
+<h2 align="center">
+    Welcome again to SQL LeetCode Marathon!
+    <img src="https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_500,h_500,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/events/2023-10-10_13-10-44_NLy2I3k.png"
+         width="22px" alt="GDSC AITU">
+</h2>
+
+<hr>
+<h3 align="center">
+    Below is information regarding the <u>3th</u> <i> (and last)</i> day of the marathon
+</h3>
+<hr>
+
+
+<table style="border: none; border-collapse: collapse; padding-left: 10%; padding-right: 10%">
+    <tr style="border: none;">
+        <td width="26%" style="border: none; text-align: center; vertical-align: center; align-items: center; justify-content: center; align-content: center">
+            <div class="square1"></div>
+            <span>PostgreSQL</span>
+        </td>
+        <td width="26%" style="border: none; text-align: center; vertical-align: middle; align-items: center; justify-content: center;">
+            <div class="square2"></div>
+            <span>Same</span>
+        </td>
+        <td width="26%" style="border: none; text-align: center; vertical-align: middle; align-items: center; justify-content: center;">
+            <div class="square3"></div>
+            <span>MySQL</span>
+        </td>
+    </tr>
+</table>
+
+
+<hr> <b>
+    Today on the marathon you will learn: </b> <br>
+<b> 1) <text class="SameDBText"> Set operations </text> <br>
+<b> 2) <text class="SameDBText"> CTE </text> </b> <br>
+<b> 3) Windows functions <i class="SameDBText">(RANK, DENSE_RANK, ROW_NUMBER, LAG/LEAD) </i> </b> and how it works
+    <br>
+
+    <hr>
+    <h4 align="center">
+        <ul>
+            <li> Solve 15 tasks <i>(hard tasks)</i> </li>
+            <li> Marathon time:3 hours, 13 minutes.</li>
+        </ul>
+    </h4>
+
+    <hr>
+    <hr>
+    <table style="border: none; border-collapse: collapse; margin-left: 10%">
+        <tr style="border: none;">
+            <td width="40%" style="border: none; text-align: center; vertical-align: center; align-items: center; justify-content: center; align-content: center">
+                |>
+                <span>Sample tasks</span>
+            </td>
+            <td width="50%" style="border: none; text-align: center; vertical-align: middle; align-items: center; justify-content: center;">
+                |
+                <span>Tasks to solve.</span>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+    <table style="border: none; border-collapse: collapse; padding-left: 10%">
+        <tr style="border: none;">
+            <td width="16%" style="border: none; text-align: center; vertical-align: center; align-items: center; justify-content: center; align-content: center">
+                <text class="Easy">Easy tasks</text>
+            </td>
+            <td width="26%" style="border: none; text-align: center; vertical-align: middle; align-items: center; justify-content: center;">
+                <text class="Medium">Medium tasks</text>
+            </td>
+            <td width="26%" style="border: none; text-align: center; vertical-align: middle; align-items: center; justify-content: center;">
+                <text class="Hard">Hard tasks</text>
+            </td>
+        </tr>
+    </table>
+    <hr>
+
+    <h3 align="center">
+        <u>
+            CTE
+        </u>
+    </h3>
+    <hr>
+    <div align="center" class="AdditionallyInfoText">
+        Additionally material: <a href="https://hightouch.com/sql-dictionary/sql-common-table-expression-cte"> click</a>, <a href="https://vc.ru/dev/259356-sql-obobshennoe-tablichnoe-vyrazhenie-i-sposoby-ego-ispolzovaniya">click.</a>
+    </div>
+
+    <hr>
+    <div class="LeetCodeText">
+        <text style="color: #ffda40">Leet</text><text style="color: #626262">Code</text>
+        Tasks
+    </div>
+    <blockquote>
+        > |>  <text class="Medium"> 626</text>. Exchange Seats <a href="https://leetcode.com/problems/exchange-seats/description/?envType=study-plan-v2&envId=top-sql-50"> click. </a>
+        > <text class="Solution">Solution: </text> <a href="https://github.com/https-whoyan/gdsc_leetcode_event_solutions/tree/main/SQL_Marathon/Day3/0_cte_union/Example_task/626_Exchange_Seats"> click.</a> <br>
+    </blockquote>
+    <div align="center" class="AdditionallyInfoText">
+        Additionally material <text class="SameDBText">(UNION)</text> : <a href="https://sql-academy.org/ru/guide/combining-queries"> click</a>
+    </div>
+    <blockquote>
+        | <text class="Medium"> 602. </text>Friend Requests II: Who Has the Most Friends<a href="https://leetcode.com/problems/friend-requests-ii-who-has-the-most-friends/description/?envType=study-plan-v2&envId=top-sql-50"> click. </a>
+        > <text class="Solution">Solution: </text> <a href="https://github.com/https-whoyan/gdsc_leetcode_event_solutions/tree/main/SQL_Marathon/Day3/0_cte_union/Other_Tasks/602_Friend_Requests_II_Who_Has_the_Most_Friends"> click.</a> <br>
+    </blockquote>
+    <blockquote>
+        | <text class="Medium"> 1321. </text>Restaurant Growth<a href="https://leetcode.com/problems/restaurant-growth/description/?envType=study-plan-v2&envId=top-sql-50"> click. </a>
+        > <text class="Solution">Solution: </text> <a href="https://github.com/https-whoyan/gdsc_leetcode_event_solutions/tree/main/SQL_Marathon/Day3/0_cte_union/Other_Tasks/1321_Restaurant_Growth"> click.</a> <br>
+    </blockquote>
+    <blockquote>
+        | <text class="Medium"> 577. </text>Movie Rating<a href="https://leetcode.com/problems/movie-rating/?envType=study-plan-v2&envId=top-sql-50"> click. </a>
+        > <text class="Solution">Solution: </text> <a href="https://github.com/https-whoyan/gdsc_leetcode_event_solutions/tree/main/SQL_Marathon/Day3/0_cte_union/Other_Tasks/1341_Movie_Rating"> click.</a> <br>
+    </blockquote>
+    <blockquote>
+        | <text class="Easy"> 1978. </text>Employees Whose Manager Left the Company I<a href="https://leetcode.com/problems/employees-whose-manager-left-the-company/description/?envType=study-plan-v2&envId=top-sql-50"> click. </a>
+        > <text class="Solution">Solution: </text> <a href="https://github.com/https-whoyan/gdsc_leetcode_event_solutions/tree/main/SQL_Marathon/Day3/0_cte_union/Other_Tasks/1978_Employees_Whose_Manager_Left_the_Company"> click.</a> <br>
+    </blockquote>
+    <hr>
+    <h3 align="center"> <u>
+        Window Functions </u>
+    </h3>
+    <hr>
+
+    <div align="center" class="AdditionallyInfoText">
+        Additionally material: <a href="https://habr.com/ru/articles/664000/"> click</a>
+    </div>
+
+    <hr>
+    <div class="LeetCodeText">
+        <text style="color: #ffda40">Leet</text><text style="color: #626262">Code</text>
+        Tasks
+    </div>
+    <blockquote>
+        | <text class="Hard"> 185.</text> Department Top Three Salaries <a href="https://leetcode.com/problems/department-top-three-salaries/?envType=study-plan-v2&envId=top-sql-50"> click. </a>
+        > <text class="Solution">Solution: </text> <a href="https://github.com/https-whoyan/gdsc_leetcode_event_solutions/tree/main/SQL_Marathon/Day3/1_window_functions/First_tasks/185_Department_Top_Three_Salaries"> click.</a> <br>
+    </blockquote>
+    <blockquote>
+        | <text class="Medium"> 585.</text> Investments in 2016 <a href="https://leetcode.com/problems/investments-in-2016/?envType=study-plan-v2&envId=top-sql-50"> click. </a>
+        <text class="Solution">Solution: </text> <a href="https://github.com/https-whoyan/gdsc_leetcode_event_solutions/tree/main/SQL_Marathon/Day3/1_window_functions/First_tasks/585_Investments_in_2016"> click.</a> <br>
+    </blockquote>
+    <hr>
+    <blockquote>
+        | <text class="Easy"> 610.</text> Triangle Judgement <a href="https://leetcode.com/problems/triangle-judgement/description/?envType=study-plan-v2&envId=top-sql-50"> click. </a>
+        > <text class="Solution">Solution: </text> <a href="https://github.com/https-whoyan/gdsc_leetcode_event_solutions/tree/main/SQL_Marathon/Day3/1_window_functions/Second_tasks/610_Triangle_Judgement"> click.</a> <br>
+    </blockquote>
+    <blockquote>
+        |> <text class="Easy"> 550.</text> The Number of Employees Which Report to Each Employee <a href="https://leetcode.com/problems/the-number-of-employees-which-report-to-each-employee/description/?envType=study-plan-v2&envId=top-sql-50"> click. </a>
+        > <text class="Solution">Solution: </text> <a href="https://github.com/https-whoyan/gdsc_leetcode_event_solutions/tree/main/SQL_Marathon/Day3/1_window_functions/Second_tasks/1731_The_Number_of_Employees_Which_Report_to_Each_Employee"> click.</a> <br>
+    </blockquote>
+    <blockquote>
+        | <text class="Easy"> 1789.</text> Primary Department for Each Employee <a href="https://leetcode.com/problems/primary-department-for-each-employee/description/?envType=study-plan-v2&envId=top-sql-50"> click. </a>
+        > <text class="Solution">Solution: </text> <a href="https://github.com/https-whoyan/gdsc_leetcode_event_solutions/tree/main/SQL_Marathon/Day3/1_window_functions/Second_tasks/1789_Primary_Department_for_Each_Employee"> click.</a> <br>
+    </blockquote>
+    <hr>
+    <h3 align="center"> <u>
+        Let's finish the problem solving! </u>
+    </h3>
+    <hr>
+    <div align="center" class="AdditionallyInfoText">
+        Additionally material <text class="SameDBText">(LAG, LEAD)</text>: <a href="https://sky.pro/wiki/sql/raschyot-raznitsy-mezhdu-strokami-v-postgre-sql-noviy-stolbets/"> click</a>
+    </div>
+    <blockquote>
+        |> <text class="Medium"> 180. </text> Consecutive Numbers <a href="https://leetcode.com/problems/consecutive-numbers/description/?envType=study-plan-v2&envId=top-sql-50"> click. </a>
+        > <text class="Solution">Solution: </text> <a href="https://github.com/https-whoyan/gdsc_leetcode_event_solutions/tree/main/SQL_Marathon/Day3/2_finalization/Example_task/180_Consecutive_Numbers"> click.</a> <br>
+    </blockquote>
+    <blockquote>
+        | <text class="Medium"> 1164. </text> Product Price at a Given Date <a href="https://leetcode.com/problems/product-price-at-a-given-date/description/?envType=study-plan-v2&envId=top-sql-50"> click. </a>
+        > <text class="Solution">Solution: </text> <a href="https://github.com/https-whoyan/gdsc_leetcode_event_solutions/tree/main/SQL_Marathon/Day3/2_finalization/Other_tasks/1164_Product_Price_at_a_Given_Date"> click.</a> <br>
+    </blockquote>
+    <blockquote>
+        | <text class="Medium"> 1204. </text> Last Person to Fit in the Bus <a href="https://leetcode.com/problems/last-person-to-fit-in-the-bus/description/?envType=study-plan-v2&envId=top-sql-50"> click. </a>
+        > <text class="Solution">Solution: </text> <a href="https://github.com/https-whoyan/gdsc_leetcode_event_solutions/tree/main/SQL_Marathon/Day3/2_finalization/Other_tasks/1204_Last_Person_to_Fit_in_the_Bus"> click.</a> <br>
+    </blockquote>
+    <blockquote>
+        | <text class="Medium"> 1907. </text> Count Salary Categories <a href="https://leetcode.com/problems/count-salary-categories/?envType=study-plan-v2&envId=top-sql-50"> click. </a>
+        > <text class="Solution">Solution: </text> <a href="https://github.com/https-whoyan/gdsc_leetcode_event_solutions/tree/main/SQL_Marathon/Day3/2_finalization/Other_tasks/1907_Count_Salary_Categories"> click.</a> <br>
+    </blockquote>
+    <br>
+    <hr>
+    <h2 align="center">
+        Finally! </h2>
+    <h4 align="center">You've solved all the problems in the SQL50 compilation on leetcode! <br>
+        Check your profile, you should see a badge there. If not, resubmit all tasks through the SQL50 staging plan interface.</h4>
+
+    <h2 align="center">
+        Thank you for your participation and attention to the GDSC AITU SQL Marathon! 🖤
+        <img src="https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_500,h_500,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/events/2023-10-10_13-10-44_NLy2I3k.png"
+             width="22px" alt="GDSC AITU">
+    </h2>  </b>
+</body>
+</html>
